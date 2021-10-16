@@ -78,3 +78,12 @@
     ```Shell
     oc logs dc/kafka-quarkus -f
     ```
+
+6. Consume messages
+
+    AMQ streams provides container images with the Apache Kafka distribution that include console scripts. We can connect to the running broker to execute a consumer script.
+
+    ```Shell
+    oc exec -c kafka my-cluster-kafka-0 -- /opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server my-cluster-kafka-bootstrap.kafka.svc.cluster.local:9092 --topic uber --from-beginning
+    ```
+
