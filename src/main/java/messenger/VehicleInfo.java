@@ -1,4 +1,4 @@
-package com.redhat.katacoda.kafka;
+package messenger;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

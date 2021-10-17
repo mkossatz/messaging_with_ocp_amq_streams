@@ -1,4 +1,4 @@
-package com.redhat.katacoda.kafka;
+package messenger;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
